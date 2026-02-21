@@ -13,7 +13,8 @@
   gtag('config', 'G-FNHE6B3YK0');
 </script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>portfolio</title>
+    <link rel="icon" href="assets/img/favicon.png" type="image/png">
+    <title>Yacine | Data Science & IA</title>
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,500,700,800&amp;display=swap">
     <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
@@ -59,6 +60,13 @@
             box-shadow: 0 10px 30px rgba(0,0,0,0.5);
             margin-bottom: 2rem;
         }
+
+        .job-title-bg {
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 5px 15px;
+            border-radius: 8px;
+            display: inline-block;
+        }
     </style>
 </head>
 
@@ -67,7 +75,7 @@
         <div data-bss-parallax-bg="true" style="height: 600px;background-image: url(assets/img/clipboard-image.png);background-position: top;background-size: cover;">
             <div class="container d-flex flex-column justify-content-end align-items-start h-100 pb-5">
                 <h1 class="display-3 fw-bold">Ben Jdidia Yacine</h1>
-                <p class="fs-2 text-info mb-0">Data Engineer</p>
+                <p class="fs-2 text-info mb-0 job-title-bg">Data Engineer</p>
             </div>
         </div>
     </header>
@@ -92,7 +100,12 @@
     <div class="container">
         <h2 class="section-title mt-5">Brain Tumor Classification</h2>
         <div class="video-container">
-            <iframe allowfullscreen="" frameborder="0" src="https://youtu.be/lyUohPuY9ek?autoplay=1&amp;mute=1&amp;loop=1&amp;playlist=lyUohPuY9ek" style="width: 100%; aspect-ratio: 16/9;"></iframe>
+            <iframe
+                    allowfullscreen
+                    frameborder="0"
+                    src="https://www.youtube.com/embed/lyUohPuY9ek?autoplay=1&mute=1&loop=1&playlist=lyUohPuY9ek"
+                    style="width: 100%; aspect-ratio: 16/9;">
+            </iframe>
         </div>
         <p class="fs-6 text-center">This project automates brain tumor detection and classification from MRI images using Deep Learning (CNNs) and transfer learning with DenseNet121. Images are preprocessed using Python, NumPy, and Pandas, including resizing, normalization, and data augmentation (rotation, flipping, zooming). The model is trained using fine-tuned convolutional layers with regularization to improve generalization. Performance reached 98% accuracy on internal data and 78% on external data. The model is deployed using Gradio to allow users to upload MRI images and view predictions with confidence scores.<br><strong>Technologies:</strong> Python (Pandas, NumPy, Matplotlib, TensorFlow, Keras)<br><strong>Machine Learning:</strong> Deep Learning, CNN, Transfer Learning, DenseNet121<br><br><a class="btn btn-info rounded-pill px-4 fw-bold" href="https://github.com/Yacine-BJ/Brain-Tumor-Classification" target="_blank">View on GitHub</a></p>
     </div>
