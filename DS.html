@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html data-bs-theme="light" lang="en">
+<html data-bs-theme="dark" lang="en">
 
 <head>
     <meta charset="utf-8">
@@ -23,59 +23,117 @@
     <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="stylesheet" href="assets/css/Team.css">
     <link rel="stylesheet" href="assets/css/Video-Responsive.css">
+    <style>
+        body {
+            font-family: 'Work Sans', sans-serif;
+        }
+
+        /* Modern Navbar */
+        .navbar {
+            backdrop-filter: blur(10px);
+        }
+
+        /* Section Title Style */
+        .section-title {
+            font-weight: 800;
+            margin-bottom: 2rem;
+            position: relative;
+            padding-bottom: 0.5rem;
+            text-align: center;
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            bottom: 0;
+            width: 50px;
+            height: 3px;
+            background-color: var(--bs-info);
+        }
+
+        .video-container {
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+            margin-bottom: 2rem;
+        }
+    </style>
 </head>
 
-<body>
+<body style="background-color: black; color: white;">
     <header>
-        <div data-bss-parallax-bg="true" style="height: 600px;background-image: url(assets/img/clipboard-image.png);background-position: center;background-size: cover;">
-            <div class="container d-flex flex-column justify-content-end align-items-start">
-                <h1 class="display-3 fw-bold d-md-flex">Ben Jdidia Yacine</h1>
-                <p class="fs-2 text-info mb-5 text-badge">Data scientist</p>
+        <div data-bss-parallax-bg="true" style="height: 600px;background-image: url(assets/img/clipboard-image.png);background-position: top;background-size: cover;">
+            <div class="container d-flex flex-column justify-content-end align-items-start h-100 pb-5">
+                <h1 class="display-3 fw-bold">Ben Jdidia Yacine</h1>
+                <p class="fs-2 text-info mb-0">Data Engineer</p>
             </div>
         </div>
     </header>
-    <nav class="navbar navbar-expand bg-dark py-3" data-bs-theme="dark">
-        <div class="container-fluid">
-            <div class="collapse navbar-collapse" id="navcol-5">
+
+    <!-- RESPONSIVE NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-3 sticky-top">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mainNav">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link active" href="index.html" style="color: rgba(255,255,255,0.55);">Curriculum</a></li>
-                    <li class="nav-item"><a class="nav-link" href="DS.html" style="color: rgb(255,255,255);">Data Science</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html">Curriculum</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="DS.html">Data Science</a></li>
                     <li class="nav-item"><a class="nav-link" href="DG.html">Data Engineering</a></li>
                     <li class="nav-item"><a class="nav-link" href="BI.html">Business Intelligence</a></li>
+                    <li class="nav-item"><a class="nav-link" href="CERTIFICATIONS.html">Certifications</a></li>
                 </ul>
             </div>
         </div>
     </nav>
-    <div class="container text-center">
-        <h2 class="text-center mt-5">Car price prediction</h2>
-        <div class="video-container"><iframe allowfullscreen="" frameborder="0" src="https://www.youtube.com/embed/n9rPBsGNwHI?autoplay=1&amp;mute=1&amp;loop=1&amp;playlist=n9rPBsGNwHI"></iframe></div>
-        <p class="fs-6 text-center d-grid mb-0 pb-0"><br>The goal of this project is to predict the price of a car based on various features using linear regression. We compare two different approaches to training the model: using a single variable (horsepower) and using multiple variables (all relevant features). The project involves exploratory data analysis (EDA), data transformations, and the application of machine learning techniques to build a predictive model<br>Python: Pandas, NumPy, Matplotlib, Scikit-learn<br>Machine Learning: Linear Regression, One-Hot Encoding, StandardScaler.<br><a class="text-center d-xl-flex justify-content-xl-center m-auto mt-0 pt-0 mb-0 pb-0" href="https://github.com/Yacine-BJ/CarPrice_Prediction" style="position: relative;"><span style="color: rgb(255, 255, 255);">Github project link</span></a><br><br></p>
+    <div class="container">
+        <h2 class="section-title mt-5">Car Price Prediction</h2>
+        <div class="video-container">
+            <iframe allowfullscreen="" frameborder="0" src="https://www.youtube.com/embed/n9rPBsGNwHI?autoplay=1&amp;mute=1&amp;loop=1&amp;playlist=n9rPBsGNwHI" style="width: 100%; aspect-ratio: 16/9;"></iframe>
+        </div>
+        <p class="fs-6 text-center">The goal of this project is to predict the price of a car based on various features using linear regression. We compare two different approaches to training the model: using a single variable (horsepower) and using multiple variables (all relevant features). The project involves exploratory data analysis (EDA), data transformations, and the application of machine learning techniques to build a predictive model.<br><strong>Technologies:</strong> Python (Pandas, NumPy, Matplotlib, Scikit-learn)<br><strong>Machine Learning:</strong> Linear Regression, One-Hot Encoding, StandardScaler<br><br><a class="btn btn-info rounded-pill px-4 fw-bold" href="https://github.com/Yacine-BJ/CarPrice_Prediction" target="_blank">View on GitHub</a></p>
     </div>
-    <div class="container text-center">
-        <h2 class="text-center mt-5">Loan Predictor</h2>
-        <div class="video-container"><iframe allowfullscreen="" frameborder="0" src="https://www.youtube.com/embed/NWi8eBLB_-M?autoplay=1&amp;mute=1&amp;loop=1&amp;playlist=NWi8eBLB_-M"></iframe></div>
-        <p class="fs-6 text-center d-grid mb-0 pb-0"><br>This project aims to predict the number of loans a person has based on demographic and financial attributes such as age, income, gender, marital status, number of kids, number of credit cards, payment methods, mortgage status, and store card ownership. The process begins with Exploratory Data Analysis (EDA) to understand the data distribution, detect outliers, and identify correlations between features. Next, in the data preprocessing phase, missing values are handled, categorical variables are encoded, and numerical features are standardized to ensure optimal model performance. The dataset is then split into training and testing sets to build and evaluate two machine learning models: K-Nearest Neighbors (KNN) and Decision Tree Classifier. KNN, a distance-based algorithm, predicts based on similarity to the nearest neighbors, while the Decision Tree model captures complex patterns by splitting data based on feature importance. Both models are evaluated using accuracy, precision, recall, and F1-score to determine their predictive performance. Further improvements, such as hyperparameter tuning and class balancing, can enhance accuracy. Ultimately, this model provides financial institutions with valuable insights into customer loan behavior, potentially aiding in risk assessment and loan approval decisions.<br>Python: Pandas, NumPy, Matplotlib, Scikit-learn<br>Machine Learning: Linear Regression, One-Hot Encoding, StandardScaler.<br><a class="text-center d-xl-flex justify-content-xl-center m-auto mt-0 pt-0 mb-0 pb-0" href="https://github.com/Yacine-BJ/LoanPredictor-ML" style="position: relative;"><span style="color: rgb(255, 255, 255);">Github project link</span></a><br><br></p>
+    <div class="container">
+        <h2 class="section-title mt-5">Loan Predictor</h2>
+        <div class="video-container">
+            <iframe allowfullscreen="" frameborder="0" src="https://www.youtube.com/embed/NWi8eBLB_-M?autoplay=1&amp;mute=1&amp;loop=1&amp;playlist=NWi8eBLB_-M" style="width: 100%; aspect-ratio: 16/9;"></iframe>
+        </div>
+        <p class="fs-6 text-center">This project aims to predict the number of loans a person has based on demographic and financial attributes such as age, income, gender, marital status, number of kids, number of credit cards, payment methods, mortgage status, and store card ownership. Captured patterns using K-Nearest Neighbors (KNN) and Decision Tree Classifier.<br><strong>Technologies:</strong> Python (Pandas, NumPy, Matplotlib, Scikit-learn)<br><strong>Machine Learning:</strong> KNN, Decision Tree Classifier<br><br><a class="btn btn-info rounded-pill px-4 fw-bold" href="https://github.com/Yacine-BJ/LoanPredictor-ML" target="_blank">View on GitHub</a></p>
     </div>
-    <div class="container text-center">
-        <h2 class="text-center mt-5">Heart disease detection</h2>
-        <div class="video-container"><iframe allowfullscreen="" frameborder="0" src="https://www.youtube.com/embed/1zmKkEP3y2c?autoplay=1&amp;mute=1&amp;loop=1&amp;playlist=1zmKkEP3y2c"></iframe></div>
-        <p class="fs-6 text-center d-grid mb-0 pb-0"><br>Using the dataset, the project aims to analyze the relationships between these variables and predict whether a person has heart disease based on their medical characteristics. Machine learning algorithms such as Decision Trees, K-Nearest Neighbors, and Logistic Regression can be applied to predict the target variable, helping identify risk factors for cardiovascular disease. This project could be used to assist healthcare professionals in diagnosing heart disease earlier and more accurately.<br><a class="text-center d-xl-flex justify-content-xl-center m-auto mt-0 pt-0 mb-0 pb-0" href="https://github.com/Yacine-BJ/heart-disease-detection" style="position: relative;"><span style="color: rgb(255, 255, 255);">Github project link</span></a><br><br></p>
+    <div class="container">
+        <h2 class="section-title mt-5">Heart Disease Detection</h2>
+        <div class="video-container">
+            <iframe allowfullscreen="" frameborder="0" src="https://www.youtube.com/embed/1zmKkEP3y2c?autoplay=1&amp;mute=1&amp;loop=1&amp;playlist=1zmKkEP3y2c" style="width: 100%; aspect-ratio: 16/9;"></iframe>
+        </div>
+        <p class="fs-6 text-center">Analyze relationships between variables and predict whether a person has heart disease based on medical characteristics. Machine learning algorithms such as Decision Trees, K-Nearest Neighbors, and Logistic Regression were applied to identify risk factors for cardiovascular disease.<br><br><a class="btn btn-info rounded-pill px-4 fw-bold" href="https://github.com/Yacine-BJ/heart-disease-detection" target="_blank">View on GitHub</a></p>
     </div>
-    <div class="container text-center">
-        <h2 class="text-center mt-5">Device Dashboard &amp; Battery Consumption Prediction</h2>
-        <div class="video-container"><iframe allowfullscreen="" frameborder="0" src="https://www.youtube.com/embed/oVwAOvqB9YI?autoplay=1&amp;mute=1&amp;loop=1&amp;playlist=oVwAOvqB9YI"></iframe></div>
-        <p class="fs-6 text-center d-grid mb-0 pb-0"><br>This project aims to develop a comprehensive and detailed dashboard for monitoring and managing devices enrolled with the Scalefusion Mobile Device Management (MDM) solution. The dashboard, developed using the Python Dash framework, will leverage Business Intelligence (BI) tools and techniques to provide insightful analytics and real-time data visualization, enhancing the management capabilities of IT administrators and business managers.<br>Programming language : Java Quarkus, Angular, Python<br><a class="text-center d-xl-flex justify-content-xl-center m-auto mt-0 pt-0 mb-0 pb-0" href="https://github.com/Yacine-BJ/DeviceDashboard" style="position: relative;"><span style="color: rgb(255, 255, 255);">Demo link</span></a><br><br></p>
+    <div class="container">
+        <h2 class="section-title mt-5">Device Dashboard & Battery Consumption Prediction</h2>
+        <div class="video-container">
+            <iframe allowfullscreen="" frameborder="0" src="https://www.youtube.com/embed/oVwAOvqB9YI?autoplay=1&amp;mute=1&amp;loop=1&amp;playlist=oVwAOvqB9YI" style="width: 100%; aspect-ratio: 16/9;"></iframe>
+        </div>
+        <p class="fs-6 text-center">Comprehensive dashboard for monitoring and managing devices enrolled with Scalefusion MDM. Developed using Python Dash framework, Java Quarkus, and Angular to provide insightful analytics and real-time data visualization.<br><strong>Technologies:</strong> Java Quarkus, Angular, Python Dash<br><br><a class="btn btn-info rounded-pill px-4 fw-bold" href="https://github.com/Yacine-BJ/DeviceDashboard" target="_blank">View on GitHub</a></p>
     </div>
-    <footer class="py-3">
+    <footer class="bg-dark text-white mt-5 py-3">
         <div class="container">
             <div class="row">
                 <div class="col-md-6 text-center text-md-start d-md-flex justify-content-md-start align-items-md-center py-2">
                     <div>
                         <p class="fs-5 fw-bold mb-0">Ben Jdidia Yacine</p>
-                        <p class="mb-0"><span style="text-decoration: underline;">+21697438639</span></p>
+                        <p class="mb-0"><span style="text-decoration: underline;">+21624111046</span></p>
                     </div>
                 </div>
-                <div class="col text-end" style="margin-top: 15px;"><a href="https://www.linkedin.com/in/yacine-ben-jedidia-1b6329213/"><i class="fab fa-linkedin fs-1 me-2" style="background: var(--bs-body-bg);color: var(--bs-body-color);"></i></a><a href="https://github.com/Yacine-BJ"><i class="fab fa-github-square fs-1 me-2" style="background: var(--bs-body-bg);color: var(--bs-body-color);"></i></a></div>
+                <div class="col text-end" style="margin-top: 15px;">
+                    <a href="https://www.linkedin.com/in/yacine-ben-jdidia-1b6329213/">
+                        <i class="fab fa-linkedin fs-1 me-2"></i>
+                    </a>
+                    <a href="https://github.com/Yacine-BJ">
+                        <i class="fab fa-github-square fs-1 me-2"></i>
+                    </a>
+                </div>
             </div>
         </div>
     </footer>

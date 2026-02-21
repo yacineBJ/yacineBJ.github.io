@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html data-bs-theme="dark" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>portfolio</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,500,700,800&display=swap">
+    <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
+
+    <style>
+        body {
+            font-family: 'Work Sans', sans-serif;
+        }
+
+        /* Modern Navbar */
+        .navbar {
+            backdrop-filter: blur(10px);
+        }
+
+        /* Certificate Card */
+        .cert-card {
+            border-radius: 20px;
+            overflow: hidden;
+            position: relative;
+            transition: transform 0.3s ease;
+        }
+
+        .cert-card img {
+            transition: transform 0.5s ease, filter 0.4s ease;
+            border-radius: 20px;
+        }
+
+        .cert-card:hover img {
+            transform: scale(1.08);
+            filter: blur(3px);
+        }
+
+        .cert-overlay {
+            position: absolute;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.75);
+            opacity: 0;
+            transition: opacity 0.4s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            padding: 20px;
+        }
+
+        .cert-card:hover .cert-overlay {
+            opacity: 1;
+        }
+
+        .cert-overlay h5 {
+            font-weight: 700;
+        }
+    </style>
+    <link rel="stylesheet" href="assets/css/bss-overrides.css">
+    <link rel="stylesheet" href="assets/css/Navbar-With-Button-icons.css">
+    <link rel="stylesheet" href="assets/css/Responsive-Image-with-Transparent-Text.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/Team.css">
+    <link rel="stylesheet" href="assets/css/Video-Responsive.css">
+</head>
+
+<body style="background-color: black; color: white;">
+
+    <header>
+        <div data-bss-parallax-bg="true" style="height: 600px;background-image: url(assets/img/clipboard-image.png);background-position: top;background-size: cover;">
+            <div class="container d-flex flex-column justify-content-end align-items-start h-100 pb-5">
+                <h1 class="display-3 fw-bold">Ben Jdidia Yacine</h1>
+                <p class="fs-2 text-info mb-0">Data Engineer</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- RESPONSIVE NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-3 sticky-top">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="mainNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Curriculum</a></li>
+                    <li class="nav-item"><a class="nav-link" href="DS.html">Data Science</a></li>
+                    <li class="nav-item"><a class="nav-link" href="DG.html">Data Engineering</a></li>
+                    <li class="nav-item"><a class="nav-link" href="BI.html">Business Intelligence</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="CERTIFICATIONS.html">Certifications</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+<!-- CERTIFICATIONS SECTION -->
+<section class="py-5">
+    <div class="container">
+        <h2 class="text-center fw-bold mb-5">Professional Certifications</h2>
+
+        <div class="row g-5 row-cols-1 row-cols-md-2 row-cols-lg-3">
+
+            <!-- NVIDIA FDL (Left) -->
+            <div class="col">
+                <a href="https://learn.nvidia.com/certificates?id=Cw7FpJPXSOaktNjciwLjaw" target="_blank" class="text-decoration-none">
+                    <div class="cert-card shadow">
+                        <img src="assets/img/FDL.png" class="img-fluid w-100" alt="Fundamentals of Deep Learning">
+                        <div class="cert-overlay">
+                            <div>
+                                <h5>Fundamentals of Deep Learning</h5>
+                                <p>NVIDIA</p>
+                                <span class="btn btn-light btn-sm rounded-pill">View Credential</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <!-- PL-300 (Center) -->
+            <div class="col">
+                <a href="https://learn.microsoft.com/en-us/users/yacinebenjedidia-5085/credentials/4fef5fd47f11489e" target="_blank" class="text-decoration-none">
+                    <div class="cert-card shadow">
+                        <img src="assets/img/certificate2.png" class="img-fluid w-100" alt="PL-300">
+                        <div class="cert-overlay">
+                            <div>
+                                <h5>PL-300</h5>
+                                <p>Microsoft Power BI Data Analyst Associate</p>
+                                <span class="btn btn-light btn-sm rounded-pill">View Credential</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <!-- NVIDIA Generative AI (Right) -->
+            <div class="col">
+                <a href="https://learn.nvidia.com/certificates?id=oW42BmHcQQuEMHjA6hI0FQ##" target="_blank" class="text-decoration-none">
+                    <div class="cert-card shadow">
+                        <img src="assets/img/Gen_IA.png" class="img-fluid w-100" alt="Generative AI with Diffusion Models">
+                        <div class="cert-overlay">
+                            <div>
+                                <h5>Generative AI with Diffusion Models</h5>
+                                <p>NVIDIA</p>
+                                <span class="btn btn-light btn-sm rounded-pill">View Credential</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+    <footer class="bg-dark text-white mt-5 py-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start d-md-flex justify-content-md-start align-items-md-center py-2">
+                    <div>
+                        <p class="fs-5 fw-bold mb-0">Ben Jdidia Yacine</p>
+                        <p class="mb-0"><span style="text-decoration: underline;">+21624111046</span></p>
+                    </div>
+                </div>
+                <div class="col text-end" style="margin-top: 15px;">
+                    <a href="https://www.linkedin.com/in/yacine-ben-jdidia-1b6329213/">
+                        <i class="fab fa-linkedin fs-1 me-2"></i>
+                    </a>
+                    <a href="https://github.com/Yacine-BJ">
+                        <i class="fab fa-github-square fs-1 me-2"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+<script src="assets/bootstrap/js/bootstrap.min.js"></script>
+<script src="assets/js/bs-init.js"></script>
+
+</body>
+</html>
